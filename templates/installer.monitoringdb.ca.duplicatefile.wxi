@@ -1,0 +1,6 @@
+  <Row>
+    <Data Column="FileKey">$$(var.DBNAME)Partition$partitionID.ndf</Data>
+    <Data Column="Component_">NDFComponent</Data>
+    <Data Column="File_">$$(var.DBNAME)Partition$partitionID.ndf</Data>
+    <Data Column="DestFolder">NDFFolder</Data>
+  </Row>

@@ -1,0 +1,3 @@
+CREATE PARTITION SCHEME MonitoringPartition{}VERSION_SUFFIX
+AS PARTITION PartitionByIndex{}VERSION_SUFFIX
+TO ($fileGroupNames)

@@ -1,0 +1,1 @@
+            newInstance.$dataObjectPropertyInUpperCase = this.$dataObjectPropertyInUpperCase;

@@ -1,0 +1,2 @@
+  <RemoveFile Name="$$(var.DBNAME)Partition$partitionID.ndf" On="both" Id="$$(var.DBNAME)Partition$partitionID.ndf" />
+  <File Name="$$(var.DBNAME)Partition$partitionID.ndf" Compressed="yes" Source="$$(var.DBLOCATION)\$$(var.DBSRCFILENAME)Partition$partitionID.ndf" Id="$$(var.DBNAME)Partition$partitionID.ndf" />

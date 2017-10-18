@@ -1,0 +1,3 @@
+CREATE PARTITION FUNCTION PartitionByIndex{}VERSION_SUFFIX (int)
+AS RANGE LEFT
+FOR VALUES ($partitionIndexes)

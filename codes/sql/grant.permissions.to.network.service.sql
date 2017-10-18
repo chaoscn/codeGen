@@ -1,0 +1,10 @@
+CREATE LOGIN [NT AUTHORITY\NETWORK SERVICE] FROM WINDOWS WITH DEFAULT_DATABASE=[master], DEFAULT_LANGUAGE=[us_english]
+CREATE USER [NT AUTHORITY\NETWORK SERVICE] FOR LOGIN [NT AUTHORITY\NETWORK SERVICE]
+EXEC sp_addrolemember N'MonitorOperators', N'NT AUTHORITY\NETWORK SERVICE'
+EXEC sp_addrolemember N'db_datareader', N'NT AUTHORITY\NETWORK SERVICE'
+EXEC sp_addrolemember N'db_datawriter', N'NT AUTHORITY\NETWORK SERVICE'
+CREATE LOGIN [IIS APPPOOL\Classic .NET AppPool] FROM WINDOWS WITH DEFAULT_DATABASE=[master], DEFAULT_LANGUAGE=[us_english]
+CREATE USER [IIS APPPOOL\Classic .NET AppPool] FOR LOGIN [IIS APPPOOL\Classic .NET AppPool]
+EXEC sp_addrolemember N'MonitorOperators', N'IIS APPPOOL\Classic .NET AppPool'
+EXEC sp_addrolemember N'db_datareader', N'IIS APPPOOL\Classic .NET AppPool'
+EXEC sp_addrolemember N'db_datawriter', N'IIS APPPOOL\Classic .NET AppPool'

@@ -1,0 +1,1 @@
+  <File Name="$populateMiscDataFileName" Compressed="yes" Source="$$(env.inetroot)\private\Monitoring\SQL\MonitoringDB\populate\misc\data\" />

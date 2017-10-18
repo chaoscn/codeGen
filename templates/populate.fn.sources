@@ -1,0 +1,22 @@
+!INCLUDE $$(INETROOT)\build\paths.all
+!INCLUDE $$(INETROOT)\build\sources.all
+
+TARGETNAME               = Monitoring
+TARGETTYPE               = NOTARGET
+
+SOURCES                  =
+
+NTTARGETFILE2            = sql-build
+
+SQL_PROCESSED_PATH       = $$(TARGETPATH)\Databases\$$(SQL_DATABASES)\fn
+
+SQL_DATABASES            = Monitoring
+
+SQL_INCLUDES             = 
+
+SQL_SOURCES              = \
+                           fnm_GetFilteredString.sql \
+                           $populateFNFileNameList \
+
+BUILD_PASS2_CONSUMES     = MonitoringDBIndex
+BUILD_PASS2_PRODUCES     = MonitoringDBFn
